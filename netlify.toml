@@ -1,0 +1,23 @@
+[build]
+# here we will use build commands to simulate a static site build
+# simple copy/move - reference https://community.netlify.com/t/using-next-js-as-a-static-site-generator-for-netlify/3391
+  command = "./copy-build.sh"
+  publish = "post"
+##  command = "transform-build.sh"
+
+
+[dev]
+#  command = "./copy-build.sh" # Command to start your dev server
+  port = 8888 # Port that the dev server will be accessible on
+  publish = "post" # If you use a _redirect file, provide the path to your static content folder
+
+
+[[redirects]]
+  from = "/foo"
+  to = "/bar"
+  status = 301
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
