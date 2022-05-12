@@ -1,0 +1,6 @@
+*.svg filter=lfs diff=lfs merge=lfs -text
+*.jpg filter=lfs diff=lfs merge=lfs -text
+large.jpg filter=lfs diff=lfs merge=lfs -text
+logo.svg filter=lfs diff=lfs merge=lfs -text
+test.svg filter=lfs diff=lfs merge=lfs -text
+green-river.png filter=lfs diff=lfs merge=lfs -text
